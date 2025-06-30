@@ -1,5 +1,6 @@
 import { Eye, EyeOff } from 'lucide-react';
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -17,12 +18,12 @@ const Login = () => {
           {/* email input */}
           <div>
             <label htmlFor="email" className='block mb-2 text-sm font-medium text-gray-600'>Email Address</label>
-            <input 
-            type="email" 
-            id='email' 
-            placeholder='Enter Your Email' 
-            className='w-full px-4 py-2 text-gray-700 bg-gray-50 border border-gray-300 rounded-lg focus:ring focus:ring-red-300 focus:outline-none' 
-            required />
+            <input
+              type="email"
+              id='email'
+              placeholder='Enter Your Email'
+              className='w-full px-4 py-2 text-gray-700 bg-gray-50 border border-gray-300 rounded-lg focus:ring focus:ring-red-300 focus:outline-none'
+              required />
           </div>
           {/* password input */}
           <div className='relative'>
@@ -30,14 +31,14 @@ const Login = () => {
               Password
             </label>
             <div className='items-center flex relative'>
-              <input 
-              type={showPassword ? "text" : "password"} 
-              placeholder='Enter Your Password' 
-              className='w-full px-4 py-2 text-gray-700 bg-gray-50 border border-gray-300 rounded-lg focus:ring-red-300 focus:outline-none'
-              required
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder='Enter Your Password'
+                className='w-full px-4 py-2 text-gray-700 bg-gray-50 border border-gray-300 rounded-lg focus:ring-red-300 focus:outline-none'
+                required
               />
               <button type='button' onClick={togglePassword} className='absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-gray-700'>
-                {showPassword ? <Eye className='w-5 h-5'/> : <EyeOff className='w-5 h-5'/>}
+                {showPassword ? <Eye className='w-5 h-5' /> : <EyeOff className='w-5 h-5' />}
               </button>
             </div>
           </div>
@@ -49,7 +50,7 @@ const Login = () => {
         <div className='text-center'>
           <p className='text-sm text-gray-600'>
             Don't have an account?{" "}
-            <a href="/signup" className='text-red-500 hover:underline'>Sign up</a>
+            <Link to='/signup'  className='text-red-500 hover:underline'>Sign up</Link>
           </p>
         </div>
       </div>

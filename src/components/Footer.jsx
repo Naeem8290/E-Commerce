@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
             <p className='mt-2 text-sm'>High-quality, sustainable clothing at affordable prices.</p>
             <p className='mt-2 text-sm'>Shastri Nagar, Jaipur, Rajasthan, India, 302016</p>
-            <p className='text-sm'>Email: support@clothify.com</p>
+            <p className='text-sm'>Email: support@fashion-clothes.com</p>
             <p className='text-sm'>Phone: +91 12345 67890</p>
         </div>
         {/* customer service link */}
@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
       {/* bottom section */}
       <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm'>
-        <p>&copy; {new Date().getFullYear()}<span className='text-red-500'> Clothify </span>All rights reserved</p>
+        <p>&copy; {new Date().getFullYear()}<span className='text-red-500'> Fashion Clothes </span>All rights reserved</p>
       </div>
     </footer>
   )
